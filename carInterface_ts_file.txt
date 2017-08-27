@@ -1,0 +1,48 @@
+interface Drivable{
+speed:number;
+time:number;
+distance:number;
+start():string;
+drive():string;
+getPosition(speed:number,time:number):number;
+}
+class Drivable implements Drivable{
+    constructor(public _distance=0){
+     this.distance=_distance;
+    }
+start():string{
+return ("The Car started from the city hyderabad at a speed of 6km/hr.");
+}
+drive():string{
+    return("The Car drive for a time interval of 8 hours from the city hyderabad and then stopped at the hotel to have lunch.");
+}
+getPosition(speed:number,time:number):number{
+    this.distance=speed*time;
+    return (this.distance);
+    }
+}
+let drivable=new Drivable();
+interface Drivable{
+speed:number;
+time:number;
+distance:number;
+start():string;
+drive():string;
+getPosition(speed:number,time:number):number;
+}
+class Drivable implements Drivable{
+    constructor(public _distance=0){
+     this.distance=_distance;
+    }
+start():string{
+return ("The Car started from the city hyderabad at a speed of 6km/hr.");
+}
+drive():string{
+    return("The Car drive for a time interval of 8 hours from the city hyderabad and then stopped at the hotel to have lunch.");
+}
+getPosition(speed:number,time:number):number{
+    this.distance=speed*time;
+    return (this.distance);
+    }
+}
+let drivable=new Drivable();
